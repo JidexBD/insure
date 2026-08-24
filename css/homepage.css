@@ -1,0 +1,83 @@
+/* Navigation */
+nav {
+  background-color: var(--tcw);
+  height: 8rem;
+  /* border: 1px solid var(--g); */
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-inline: 2rem;
+}
+
+.nav-logo {
+  width: 11.1rem;
+  height: 1.8rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  color: var(--ng);
+  display: none;
+}
+
+/* .menu-items {
+  display: none;
+} */
+
+.menu-items a {
+  color: var(--ng);
+  font-size: 1.3rem;
+}
+
+.menu-items a:active,
+.menu-items a:hover {
+  color: var(--bb);
+  font-weight: 700;
+}
+.menu-btn a {
+  padding: 1rem 5rem;
+  border: 1px solid var(--bb);
+  color: var(--bb);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn a:active,
+.menu-btn a:hover {
+  padding: 1rem 5rem;
+  border: 1px solid var(--bb);
+  background-color: var(--hc);
+  color: var(--tcw);
+}
+
+.nav-menu {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* tab */
+@media (min-width: 43em) {
+}
+
+/*tab landscape*/
+@media (min-width: 56em) {
+  .nav-container {
+    margin: 3rem 16.5rem;
+  }
+  .menu {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+
+/* 1024 */
+@media (min-width: 75em) {
+}
