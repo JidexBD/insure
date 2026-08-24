@@ -1,3 +1,5 @@
+/*************************************************************NAV STARTS*************************************/
+
 /* Navigation */
 nav {
   background-color: var(--tcw);
@@ -58,6 +60,13 @@ nav {
 .nav-menu {
   width: 3rem;
   height: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* giving it a shadwo effect */
+.nav-menu:active {
+  box-shadow: 0 2rem 3rem 3rem var(--g);
+  transform: scale(0.2);
 }
 
 /* tab */
@@ -81,3 +90,84 @@ nav {
 /* 1024 */
 @media (min-width: 75em) {
 }
+
+/* mobile sider bar */
+.mobile-nav {
+  /* position */
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  width: 26rem;
+  height: 100vh;
+  background-color: var(--bb);
+  color: var(--tcw);
+  padding: 2rem;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  transition: 0.35s ease;
+  z-index: 1000;
+  border: 1px solid var(--tcw);
+}
+
+/* active */
+.mobile-nav.active {
+  right: 0;
+}
+
+.close-btn {
+  margin-top: 4rem;
+  border: none;
+  background-color: var(--tcw);
+  align-self: flex-end;
+  transition: all 0.2s ease;
+}
+.close-btn:active {
+  box-shadow: 0 2rem 3rem 3rem var(--g);
+  transform: scale(0.2);
+}
+.close-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mobile-menu-list li:active,
+.mobile-menu-list li:hover {
+  padding: 1rem 2rem;
+  border: 1px solid var(--tc);
+  border-radius: 10px;
+}
+
+.menu-btn-mobile a {
+  padding: 1rem 5rem;
+  border: 1px solid var(--bb);
+  color: var(--bb);
+  background-color: var(--tcw);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn-mobile a:active,
+.menu-btn-moile a:hover {
+  padding: 1rem 5rem;
+  border: 1px solid var(--bb);
+  background-color: var(--hc);
+  color: var(--tcw);
+}
+
+/* ****************************************NAV END ********************** */
+
+/************************************HERO SECTION******************************** */
+
+/* ***************************HERO END ******************** */
