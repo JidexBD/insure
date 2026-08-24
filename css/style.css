@@ -1,0 +1,53 @@
+:root {
+  /* colors */
+  --tcw: #ffffff;
+  --hc: #2c2830;
+  --g: #837d88;
+  --bb: #2d2641;
+  /* fonts */
+  --ff1: "Karla", sans-serif;
+  --ff2: "DM Serif Display", serif;
+}
+
+/* defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff1);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: var(--g);
+}
+
+/* utilities */
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 16.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+img {
+  width: 100%;
+  display: inline-block;
+}
