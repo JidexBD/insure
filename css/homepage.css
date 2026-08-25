@@ -1,9 +1,43 @@
+/* *************************************HEADER STARTS */
+
+header {
+  background-color: var(--bb);
+  position: relative;
+}
+
+/* decoration */
+.rectangle {
+  display: nones;
+}
+.bg-left {
+  position: absolute;
+  top: 45%;
+  left: -1%;
+  z-index: 1;
+}
+.b-left {
+  width: 50%;
+}
+
+.bg-right {
+  position: absolute;
+  top: 90%;
+  right: -80%;
+  z-index: 1;
+}
+.b-right {
+  width: 50%;
+  transform: rotate(33deg);
+}
+
+/*************************************************************END HEADER*************************************/
+
 /*************************************************************NAV STARTS*************************************/
 
 /* Navigation */
 nav {
   background-color: var(--tcw);
-  height: 8rem;
+  height: 6rem;
   /* border: 1px solid var(--g); */
 }
 .nav-container {
@@ -14,6 +48,9 @@ nav {
   margin-inline: 2rem;
 }
 
+.logo-click {
+  cursor: pointer;
+}
 .nav-logo {
   width: 11.1rem;
   height: 1.8rem;
@@ -26,6 +63,7 @@ nav {
   gap: 2rem;
   color: var(--ng);
   display: none;
+  cursor: pointer;
 }
 
 /* .menu-items {
@@ -169,5 +207,57 @@ nav {
 /* ****************************************NAV END ********************** */
 
 /************************************HERO SECTION******************************** */
+.hero-section {
+  display: flex;
+  /* width: 100rem; */
+  flex-direction: column-reverse;
+  gap: 3rem;
+  z-index: 100;
+}
 
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+  color: var(--tcw);
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.hero-heading {
+  font-family: var(--ff2);
+  font-weight: 800;
+  font-size: 4.8rem;
+  letter-spacing: -0.5;
+  line-height: 150%;
+  margin-top: 8rem;
+  animation: moveInLeft 5s 2;
+}
+
+.hero-subHeading {
+  font-size: 1.6rem;
+  line-height: 165%;
+  margin-top: 1.6rem;
+  animation: moveInRight 5s 2;
+}
+
+.hero-btn {
+  margin-top: 3.2rem;
+  border: 1px solid var(--tcw);
+  background-color: var(--bb);
+  color: var(--tcw);
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  animation: moveUp 5s 2;
+}
+
+.hero-btn:active,
+.hero-btn:hover {
+  border: none;
+  background-color: var(--tcw);
+  color: var(--bb);
+}
 /* ***************************HERO END ******************** */
