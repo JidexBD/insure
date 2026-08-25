@@ -30,6 +30,44 @@ header {
   transform: rotate(33deg);
 }
 
+/* tab */
+@media (min-width: 43em) {
+  .bg-left {
+    position: absolute;
+    top: 60%;
+    left: -1%;
+    z-index: 1;
+  }
+
+  .bg-right {
+    position: absolute;
+    top: 90%;
+    right: -30%;
+    z-index: 1;
+  }
+
+  .b-right {
+    width: 50%;
+    transform: rotate(60deg);
+  }
+}
+
+/*tab landscape*/
+@media (min-width: 56em) {
+}
+
+/* 1024 */
+@media (min-width: 75em) {
+}
+
+/* 1440 */
+@media (min-width: 90em) {
+}
+
+/* 1800 */
+@media (min-width: 112em) {
+}
+
 /*************************************************************END HEADER*************************************/
 
 /*************************************************************NAV STARTS*************************************/
@@ -260,4 +298,28 @@ nav {
   background-color: var(--tcw);
   color: var(--bb);
 }
+
+/* tab */
+@media (min-width: 43em) {
+  .hero-heading {
+    font-size: 6rem;
+  }
+}
+
+/*tab landscape*/
+@media (min-width: 56em) {
+}
+
+/* 1024 */
+@media (min-width: 75em) {
+}
+
+/* 1440 */
+@media (min-width: 90em) {
+}
+
+/* 1800 */
+@media (min-width: 112em) {
+}
+
 /* ***************************HERO END ******************** */
