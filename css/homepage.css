@@ -145,10 +145,6 @@ nav {
   transform: scale(0.2);
 }
 
-/* tab */
-@media (min-width: 43em) {
-}
-
 /*tab landscape*/
 @media (min-width: 56em) {
   .nav-container {
@@ -161,10 +157,6 @@ nav {
   .nav-menu {
     display: none;
   }
-}
-
-/* 1024 */
-@media (min-width: 75em) {
 }
 
 /* mobile sider bar */
@@ -308,6 +300,13 @@ nav {
 
 /*tab landscape*/
 @media (min-width: 56em) {
+  .hero-section {
+    display: flex;
+    /* width: 100rem; */
+    flex-direction: row;
+    gap: 0rem;
+    z-index: 100;
+  }
 }
 
 /* 1024 */
