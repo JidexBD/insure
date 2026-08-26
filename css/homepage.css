@@ -366,13 +366,6 @@ nav {
 
 /* 1024 */
 @media (min-width: 75em) {
-  .hero-heading {
-    font-size: 6rem;
-  }
-}
-
-/*tab landscape*/
-@media (min-width: 56em) {
   .hero-section {
     display: flex;
     /* width: 100rem; */
