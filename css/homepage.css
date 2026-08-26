@@ -7,7 +7,7 @@ header {
 
 /* decoration */
 .rectangle {
-  display: nones;
+  display: none;
 }
 .bg-left {
   position: absolute;
@@ -54,6 +54,27 @@ header {
 
 /*tab landscape*/
 @media (min-width: 56em) {
+  .bg-left {
+    position: absolute;
+    top: 70%;
+    left: -1%;
+    z-index: 1;
+  }
+  .b-left {
+    width: 80%;
+  }
+
+  .bg-right {
+    position: absolute;
+    top: 10%;
+    right: -15%;
+    z-index: 0;
+  }
+
+  .b-right {
+    width: 80%;
+    transform: rotate(-10deg);
+  }
 }
 
 /* 1024 */
@@ -77,6 +98,7 @@ nav {
   background-color: var(--tcw);
   height: 6rem;
   /* border: 1px solid var(--g); */
+  z-index: 10000;
 }
 .nav-container {
   display: flex;
@@ -306,11 +328,91 @@ nav {
     flex-direction: row;
     gap: 0rem;
     z-index: 100;
+    z-index: 100;
+    position: relative;
+    margin-inline: 10.5rem;
+    width: 100rem;
+  }
+
+  .left {
+    align-items: left;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 8rem;
+    width: 45%;
+  }
+  .hero-btn {
+    align-self: flex-start;
+  }
+
+  .hero-heading {
+    font-size: 6rem;
+  }
+
+  .hero-subHeading {
+    text-align: left;
+  }
+  .right {
+    position: absolute;
+    right: 3rem;
+    top: 9.8rem;
+  }
+
+  .hero-image {
+    width: 44rem;
+    height: 55rem;
   }
 }
 
 /* 1024 */
 @media (min-width: 75em) {
+  .hero-heading {
+    font-size: 6rem;
+  }
+}
+
+/*tab landscape*/
+@media (min-width: 56em) {
+  .hero-section {
+    display: flex;
+    /* width: 100rem; */
+    flex-direction: row;
+    gap: 0rem;
+    z-index: 100;
+    z-index: 100;
+    position: relative;
+    margin-inline: 10.5rem;
+    width: 100rem;
+  }
+
+  .left {
+    align-items: left;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 8rem;
+    width: 45%;
+  }
+  .hero-btn {
+    align-self: flex-start;
+  }
+
+  .hero-heading {
+    font-size: 6rem;
+  }
+
+  .hero-subHeading {
+    text-align: left;
+  }
+  .right {
+    position: absolute;
+    right: 3rem;
+    top: 9.8rem;
+  }
+
+  .hero-image {
+    width: 44rem;
+    height: 55rem;
+  }
 }
 
 /* 1440 */
