@@ -79,6 +79,12 @@ header {
 
 /* 1024 */
 @media (min-width: 75em) {
+  .bg-right {
+    position: absolute;
+    top: 8%;
+    right: -10%;
+    z-index: 0;
+  }
 }
 
 /* 1440 */
@@ -87,6 +93,13 @@ header {
 
 /* 1800 */
 @media (min-width: 112em) {
+  .bg-right {
+    position: absolute;
+    top: 8%;
+    right: -6%;
+    z-index: 0;
+    transform: rotate(20deg);
+  }
 }
 
 /*************************************************************END HEADER*************************************/
@@ -367,15 +380,9 @@ nav {
 /* 1024 */
 @media (min-width: 75em) {
   .hero-section {
-    display: flex;
-    /* width: 100rem; */
-    flex-direction: row;
-    gap: 0rem;
-    z-index: 100;
-    z-index: 100;
-    position: relative;
-    margin-inline: 10.5rem;
-    width: 100rem;
+    margin-inline: 16.5rem;
+    width: 110rem;
+    height: 60rem;
   }
 
   .left {
@@ -383,28 +390,29 @@ nav {
     justify-content: flex-start;
     text-align: left;
     margin-bottom: 8rem;
-    width: 45%;
-  }
-  .hero-btn {
-    align-self: flex-start;
+    width: 40%;
   }
 
   .hero-heading {
     font-size: 6rem;
+    line-height: 90%;
+    letter-spacing: -1px;
   }
 
   .hero-subHeading {
     text-align: left;
+    letter-spacing: -1px;
   }
   .right {
     position: absolute;
-    right: 3rem;
+    right: 10rem;
     top: 9.8rem;
   }
 
   .hero-image {
-    width: 44rem;
-    height: 55rem;
+    /* width: 44rem;
+    height: 55rem; */
+    width: 100%;
   }
 }
 
@@ -414,6 +422,11 @@ nav {
 
 /* 1800 */
 @media (min-width: 112em) {
+  .hero-section {
+    margin: 10rem auto;
+    width: 110rem;
+    height: 60rem;
+  }
 }
 
 /* ***************************HERO END ******************** */
