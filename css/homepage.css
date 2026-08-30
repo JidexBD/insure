@@ -328,6 +328,15 @@ nav {
 
 /* tab */
 @media (min-width: 43em) {
+  .hero-section {
+    display: flex;
+    /* width: 100rem; */
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 100;
+  }
+
   .hero-heading {
     font-size: 6rem;
   }
@@ -472,6 +481,7 @@ main {
 
 .feat-icon {
   width: 35%;
+  animation: bounce 3s infinite;
 }
 
 .ft-heading {
@@ -491,6 +501,10 @@ main {
 @media (min-width: 43em) {
   .dec-rec {
     width: 16rem;
+  }
+
+  .feat-icon {
+    width: 18%;
   }
 }
 
