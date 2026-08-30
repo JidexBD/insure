@@ -651,6 +651,7 @@ main {
   background-color: var(--bb);
   height: 34.4rem;
   position: relative;
+  margin-top: 17.4rem;
 }
 
 .cta {
