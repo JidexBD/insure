@@ -642,6 +642,45 @@ main {
   }
 }
 
-/* animations for features section  */
-
 /* ***************************MAIN END  ******************** */
+
+/* ***************************CTA SECTION  ******************** */
+
+.cta-section {
+  margin: 2rem;
+  background-color: var(--bb);
+  height: 34.4rem;
+  position: relative;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-heading {
+  font-family: var(--ff2);
+  font-size: 4rem;
+  letter-spacing: -0.5px;
+  color: var(--tcw);
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.cta-btn {
+  padding: 1.5rem 5rem;
+  background-color: transparent;
+  border: 1px solid var(--tcw);
+  color: var(--tcw);
+  margin-top: 2rem;
+}
+
+.cta-dec {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: -35%;
+}
+/* ***************************CTA END  ******************** */
