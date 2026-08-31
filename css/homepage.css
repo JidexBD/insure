@@ -776,9 +776,10 @@ main {
 /* 1024 */
 @media (min-width: 75em) {
   .cta-section {
-    margin: 2rem 16.5rem;
+    margin: 2rem auto;
     background-color: var(--bb);
     height: 34.4rem;
+    width: 110rem;
     position: relative;
     margin-top: 17.4rem;
     overflow: hidden;
@@ -812,6 +813,41 @@ main {
 
 /* 1800 */
 @media (min-width: 112em) {
+  .cta-section {
+    margin: 2rem auto;
+    background-color: var(--bb);
+    height: 34.4rem;
+    width: 110rem;
+    position: relative;
+    margin-top: 17.4rem;
+    overflow: hidden;
+  }
+  .cta {
+    /* padding-top: 5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+    margin: auto 14rem;
+    padding: 4rem 5rem;
+    gap: 5rem;
+  }
+
+  .cta-btn {
+    padding: 1.5rem 3rem;
+    width: 25rem;
+    background-color: transparent;
+    border: 1px solid var(--tcw);
+    color: var(--tcw);
+    transition: all 0.2s;
+    margin-left: 12rem;
+    &:hover,
+    &:active {
+      background-color: var(--tcw);
+      color: var(--bb);
+    }
+  }
 }
 
 /* ***************************CTA END  ******************** */
@@ -1080,6 +1116,7 @@ footer {
   .footer-cotainter {
     margin-inline: 16.5rem;
     margin-bottom: 2rem;
+    width: 111.6rem;
     padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
@@ -1156,6 +1193,43 @@ footer {
 
 /* 1800 */
 @media (min-width: 112em) {
+  .foot-head {
+    width: 111.6rem;
+    margin-inline: 20.5rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+  }
+  .footer-cotainter {
+    margin-inline: 16.5rem;
+    margin-bottom: 2rem;
+    width: 120.6rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    cursor: pointer;
+  }
+
+  .fg-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--bb);
+    gap: 2rem;
+  }
 }
 
 /* ***************************FOOTER   END  ******************** */
+
+/* 112rem sizing problems */
