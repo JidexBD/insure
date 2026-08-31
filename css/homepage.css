@@ -652,6 +652,7 @@ main {
   height: 34.4rem;
   position: relative;
   margin-top: 17.4rem;
+  overflow: hidden;
 }
 
 .cta {
@@ -676,6 +677,13 @@ main {
   border: 1px solid var(--tcw);
   color: var(--tcw);
   margin-top: 2rem;
+  transition: all 0.2s;
+
+  &:hover,
+  &:active {
+    background-color: var(--tcw);
+    color: var(--bb);
+  }
 }
 
 .cta-dec {
@@ -684,4 +692,125 @@ main {
   top: 0;
   right: -35%;
 }
+
+/* tab */
+@media (min-width: 43em) {
+  .cta-section {
+    margin: 2rem 10.5rem;
+    background-color: var(--bb);
+    height: 34.4rem;
+    position: relative;
+    margin-top: 17.4rem;
+    overflow: hidden;
+  }
+  .cta-btn {
+    padding: 1.5rem 5rem;
+    background-color: transparent;
+    border: 1px solid var(--tcw);
+    color: var(--tcw);
+    margin-top: 6rem;
+  }
+
+  .cta-dec {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: -18%;
+  }
+}
+
+/*tab landscape*/
+@media (min-width: 56em) {
+  .cta {
+    /* padding-top: 5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90rem;
+    padding: 4rem 5rem;
+  }
+
+  .cta-heading {
+    font-family: var(--ff2);
+    font-size: 5.6rem;
+    letter-spacing: -0.8px;
+    line-height: 100%;
+    color: var(--tcw);
+    text-align: left;
+    margin-top: 7rem;
+  }
+
+  .cta-btn {
+    padding: 1.5rem 3rem;
+    width: 25rem;
+    background-color: transparent;
+    border: 1px solid var(--tcw);
+    color: var(--tcw);
+
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      background-color: var(--tcw);
+      color: var(--bb);
+    }
+  }
+
+  .cta-dec {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: -18%;
+  }
+
+  .cta-dec {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: -12%;
+  }
+}
+
+/* 1024 */
+@media (min-width: 75em) {
+  .cta-section {
+    margin: 2rem 16.5rem;
+    background-color: var(--bb);
+    height: 34.4rem;
+    position: relative;
+    margin-top: 17.4rem;
+    overflow: hidden;
+  }
+  .cta-btn {
+    padding: 1.5rem 3rem;
+    width: 25rem;
+    background-color: transparent;
+    border: 1px solid var(--tcw);
+    color: var(--tcw);
+    transition: all 0.2s;
+    margin-left: 12rem;
+    &:hover,
+    &:active {
+      background-color: var(--tcw);
+      color: var(--bb);
+    }
+  }
+
+  .cta-dec {
+    width: 40%;
+    position: absolute;
+    top: -2%;
+    right: -10%;
+  }
+}
+
+/* 1440 */
+@media (min-width: 90em) {
+}
+
+/* 1800 */
+@media (min-width: 112em) {
+}
+
 /* ***************************CTA END  ******************** */
